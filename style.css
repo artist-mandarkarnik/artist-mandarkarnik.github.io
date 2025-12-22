@@ -1,10 +1,10 @@
-/* ===== General Body & Header ===== */
+/* ===== Body & Header ===== */
 body {
   margin: 0;
   padding: 40px;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background: #ffffff;
-  color: #111;
+  background: #f5f7fa; /* soft pastel background */
+  color: #333;
 }
 
 header {
@@ -13,26 +13,31 @@ header {
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 300;
+  font-size: 42px;
+  font-weight: 400;
   letter-spacing: 2px;
+  color: #4a3f55; /* deep purple for titles */
 }
 
 .tagline {
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #555;
+  color: #a14c9c; /* accent purple */
 }
 
 /* ===== About Section ===== */
 .about {
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto 60px auto;
   text-align: center;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  background: #fff8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 /* ===== Theme Sections ===== */
@@ -42,76 +47,56 @@ h1 {
 
 .theme h2 {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 30px;
-  color: #222;
-  font-weight: 400;
+  color: #a14c9c; /* accent color */
+  font-weight: 500;
 }
 
 /* ===== Gallery Grid ===== */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 260px); /* ~75% bigger than before */
-  gap: 20px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* flexible & bigger */
+  gap: 24px;
+  justify-items: center;
 }
 
 .gallery-grid figure {
   margin: 0;
+  transition: transform 0.2s;
+}
+
+.gallery-grid figure:hover {
+  transform: scale(1.05); /* subtle zoom effect on hover */
 }
 
 .gallery-grid img {
   width: 100%;
+  max-width: 400px; /* visually bigger than before */
   height: auto;
-  max-width: 260px; /* ~75% larger */
-  border-radius: 4px;
+  border-radius: 6px;
   display: block;
-  cursor: pointer; /* indicate clickable */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 .gallery-grid figcaption {
-  max-width: 260px;
-  font-size: 13px;
+  max-width: 400px;
+  font-size: 14px;
   text-align: center;
-  margin-top: 6px;
-  color: #333;
-  line-height: 1.3;
+  margin-top: 8px;
+  color: #555;
+  line-height: 1.4;
 }
 
 /* ===== Footer ===== */
 footer {
   margin-top: 60px;
   text-align: center;
-  font-size: 12px;
-  color: #666;
-}
-
-/* ===== Lightbox Overlay ===== */
-.lightbox-overlay {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.lightbox-overlay img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 6px;
-}
-
-.lightbox-overlay .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 36px;
-  color: #fff;
-  cursor: pointer;
-}
-
+  font-size: 13p
