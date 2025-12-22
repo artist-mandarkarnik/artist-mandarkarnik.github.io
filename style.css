@@ -48,12 +48,12 @@ h1 {
   font-weight: 400;
 }
 
-/* ===== Gallery Grid (Small & Compact) ===== */
+/* ===== Gallery Grid (Compact & Uniform) ===== */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* smaller for compact grid */
-  gap: 16px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, 180px); /* fixed size cells */
+  gap: 20px;
+  justify-content: center; /* center grid */
 }
 
 .gallery-grid figure {
@@ -62,18 +62,19 @@ h1 {
 
 .gallery-grid img {
   width: 100%;
-  max-width: 150px; /* much smaller images */
   height: auto;
+  max-width: 180px; /* all images display at same max width */
   border-radius: 4px;
   display: block;
 }
 
 .gallery-grid figcaption {
-  max-width: 150px; /* match smaller image width */
-  font-size: 11px;
+  max-width: 180px; 
+  font-size: 12px;
   text-align: center;
   margin-top: 6px;
   color: #333;
+  line-height: 1.3;
 }
 
 /* ===== Footer ===== */
