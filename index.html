@@ -9,16 +9,18 @@
 
 <header>
   <h1>Mandar Karnik</h1>
-  <p class="tagline">Art as Expression · Color · Emotion · Positivity</p>
+  <p class="tagline">Exploring Emotion, Color, and Thought Through Visual Art</p>
 </header>
 
 <!-- About the Artist -->
 <section class="about">
   <h2>About the Artist</h2>
   <p>
-    Mandar Karnik is an autistic artist who explores emotions, identity, and the beauty of colors through contemporary and abstract art. 
-    Working with bold colors, expressive forms, and unique perspectives, Mandar seeks to communicate positivity, cultural reflections, and the complex thought processes of the human mind. 
-    Mandar also works with autistic children to help them express themselves through art, creating a space for joy and creativity.
+    Mandar Karnik is a visionary artist who pushes boundaries and explores the extraordinary. 
+    Through vibrant colors, bold forms, and surreal compositions, Mandar captures the unseen 
+    emotions, dualities, and cultural depths that resonate universally. 
+    His works invite viewers to journey beyond the ordinary, evoking curiosity, introspection, 
+    and a sense of wonder. Each piece tells a story, revealing intricate details and thought-provoking perspectives. 
   </p>
 </section>
 
@@ -26,37 +28,39 @@
 <section class="theme" id="women-expression">
   <h2>Women – Culture, Expression & Identity</h2>
   <div class="gallery-grid">
+
     <figure>
-      <img src="images/art7.jpeg" alt="Native Strength">
+      <img src="images/art7.jpeg" alt="Native Strength" class="clickable">
       <figcaption>
         <strong>Native Strength</strong><br>
-        Native American woman, anger expression, vibrant colors, purple-dominant, snake-like eyes. 24"x24".
+        A fierce Native American woman, her anger expressed through vibrant purples and snake-like piercing eyes. A visual roar of power, pride, and untamed spirit. 24"x24".
       </figcaption>
     </figure>
 
     <figure>
-      <img src="images/art4.jpeg" alt="Silent History">
+      <img src="images/art4.jpeg" alt="Silent History" class="clickable">
       <figcaption>
         <strong>Silent History</strong><br>
-        Contemporary woman outline, nude, red & yellow background, deep in thought, historic reflection on women’s rights. 36"x24".
+        A faceless woman in a red-yellow historic landscape, lost in thought, reflecting centuries of silenced voices. Contemporary yet timeless, a meditation on solitude and resilience. 36"x24".
       </figcaption>
     </figure>
 
     <figure>
-      <img src="images/art2.jpeg" alt="Confident Half">
+      <img src="images/art2.jpeg" alt="Confident Half" class="clickable">
       <figcaption>
         <strong>Confident Half</strong><br>
-        Modern woman’s face, sharp eyes, colorful, half face white, happy and confident. 24"x24".
+        Half-painted face bursting with colors, sharp eyes radiating joy and confidence. A modern portrait of self-assurance, hope, and bold expression. 24"x24".
       </figcaption>
     </figure>
 
     <figure>
-      <img src="images/art5.jpeg" alt="Tradition Reimagined">
+      <img src="images/art5.jpeg" alt="Tradition Reimagined" class="clickable">
       <figcaption>
         <strong>Tradition Reimagined</strong><br>
-        Modern woman with traditional style, eyes closed, vibrant colors and makeup. 36"x36".
+        A modern woman adorned in traditional style, eyes closed, a symphony of vibrant colors and makeup. Harmony between past and present, elegance and expression. 36"x36".
       </figcaption>
     </figure>
+
   </div>
 </section>
 
@@ -64,35 +68,39 @@
 <section class="theme" id="positivity">
   <h2>Positivity & Flow of Colors</h2>
   <div class="gallery-grid">
+
     <figure>
-      <img src="images/art1.jpeg" alt="Northern Serenity">
+      <img src="images/art1.jpeg" alt="Northern Serenity" class="clickable">
       <figcaption>
         <strong>Northern Serenity</strong><br>
-        Nature, snowy day with northern lights. 12"x12".
+        A snowy landscape under ethereal northern lights. Calm, magical, and serene — nature’s silent symphony captured in vivid color. 12"x12".
       </figcaption>
     </figure>
 
     <figure>
-      <img src="images/art3.jpeg" alt="Ocean Harmony">
+      <img src="images/art3.jpeg" alt="Ocean Harmony" class="clickable">
       <figcaption>
         <strong>Ocean Harmony</strong><br>
-        Contemporary ocean and beach scene. 12"x12".
+        Waves caress the beach in a contemporary expression of tranquility and flow. Soft, meditative, and inspiring positivity through colors. 12"x12".
       </figcaption>
     </figure>
+
   </div>
 </section>
 
-<!-- THEME 3: Expressions & Dual Thought (Autism Perspective) -->
+<!-- THEME 3: Expressions & Dual Thought -->
 <section class="theme" id="autism-expression">
-  <h2>Expressions & Dual Thought (Autism Perspective)</h2>
+  <h2>Expressions & Dual Thought</h2>
   <div class="gallery-grid">
+
     <figure>
-      <img src="images/art6.jpeg" alt="Dual Mind">
+      <img src="images/art6.jpeg" alt="Dual Mind" class="clickable">
       <figcaption>
         <strong>Dual Mind</strong><br>
-        Positive & negative divided diagonally, warm & cool colors, sun and ocean, heart divided. Abstract representation of autistic thinking. 12"x12".
+        Warm sun and cool ocean divided diagonally, a heart split into two, visualizing the duality of thought and emotion. Abstract, layered, and profoundly introspective. 12"x12".
       </figcaption>
     </figure>
+
   </div>
 </section>
 
@@ -100,6 +108,22 @@
   <p>© Mandar Karnik · All artworks protected · CC BY-NC-ND 4.0</p>
 </footer>
 
+<!-- Lightbox Script -->
+<script>
+  const images = document.querySelectorAll('.clickable');
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      const overlay = document.createElement('div');
+      overlay.classList.add('lightbox-overlay');
+      overlay.innerHTML = `<img src="${img.src}" alt="${img.alt}"><span class="close">&times;</span>`;
+      document.body.appendChild(overlay);
+      overlay.querySelector('.close').addEventListener('click', () => overlay.remove());
+      overlay.addEventListener('click', e => {
+        if(e.target === overlay) overlay.remove();
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
-
