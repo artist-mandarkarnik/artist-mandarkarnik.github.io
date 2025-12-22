@@ -3,14 +3,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background: #f0f0f8; /* subtle soft background for page edges */
+  background: #f0f0f8;
   color: #333;
 }
 
 /* ===== Header ===== */
 header {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #ffb6b9, #fae3d9);
   color: #4a3f55;
 }
@@ -87,7 +87,7 @@ h1 {
 
 .gallery-grid img {
   width: 100%;
-  max-width: 450px; /* images bigger */
+  max-width: 450px;
   height: auto;
   border-radius: 6px;
   display: block;
@@ -117,7 +117,7 @@ footer {
   font-size: 13px;
   color: #555;
   padding: 20px;
-  background: #ffe0f0;
+  background: linear-gradient(135deg, #ffe0f0, #fff8e8);
   border-top: 1px solid #ddd;
 }
 
