@@ -1,41 +1,40 @@
 body {
   margin: 0;
-  font-family: "Helvetica Neue", sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #000);
-  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: #eaeaea;
 }
 
-/* NAVBAR */
+/* NAV */
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 100;
-  background: rgba(0,0,0,0.85);
+  background: #000;
+  padding: 16px 40px;
   display: flex;
   justify-content: space-between;
-  padding: 16px 40px;
+  z-index: 100;
 }
 
-.nav-right a {
+.nav-links a {
   margin-left: 28px;
-  color: #ddd;
+  color: #ccc;
   text-decoration: none;
-  font-size: 15px;
-  letter-spacing: 0.05em;
+  font-size: 14px;
 }
 
-.nav-right a:hover {
-  color: #ffcc70;
+.nav-links a:hover {
+  color: #fff;
 }
 
 /* SECTIONS */
 .section {
-  padding: 80px 8%;
+  padding: 70px 8%;
 }
 
 h2 {
-  font-weight: 300;
-  letter-spacing: 0.15em;
+  font-weight: normal;
+  letter-spacing: 0.12em;
   margin-bottom: 30px;
 }
 
@@ -43,38 +42,20 @@ h2 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 26px;
-  margin-bottom: 80px;
+  gap: 24px;
+  margin-bottom: 70px;
 }
 
-/* ART CARDS */
-.art-card {
-  cursor: pointer;
-}
-
+/* ART */
 .art-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 6px;
-  transition: transform 0.3s ease;
+  background: #000;
 }
 
-.art-card:hover img {
-  transform: scale(1.04);
-}
-
-/* DUALITY FIX */
-.duality img {
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  background: #111;
-}
-
-/* CAPTION */
 .caption {
   font-size: 13px;
-  line-height: 1.5;
   margin-top: 8px;
   color: #bbb;
 }
@@ -84,32 +65,30 @@ h2 {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.95);
+  background: rgba(0,0,0,0.92);
   z-index: 999;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #modal img {
-  max-width: 85%;
+  max-width: 80%;
   max-height: 70vh;
-  border-radius: 8px;
 }
 
-#modal-caption {
-  max-width: 700px;
+#modal-text {
+  margin-top: 20px;
+  max-width: 600px;
   text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-top: 24px;
-  color: #eee;
+  font-size: 17px;
+  line-height: 1.5;
 }
 
-.close-btn {
+.close {
   position: absolute;
-  top: 80px;
+  top: 70px;
   right: 40px;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
 }
