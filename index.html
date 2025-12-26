@@ -1,180 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Mandar Karnik | Art Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark">
 
-<header id="home">
-  <h1>Mandar Karnik</h1>
-  <p class="tagline">Emotion • Color • Thought</p>
+<header class="navbar">
+  <div class="logo">Mandar Karnik</div>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#cv">Artist CV</a>
+    <a href="#contact">Contact</a>
+    <button id="modeToggle">🌙</button>
+  </nav>
 </header>
 
-<section class="about" id="about">
-  <h2>About the Artist</h2>
-  <p>
-    Mandar Karnik’s work exists at the intersection of emotion, color, and inner experience.
-    His paintings explore identity, silence, intensity, and optimism through bold palettes and
-    expressive forms. Each artwork invites the viewer to pause, reflect, and interpret—
-    allowing personal meaning to emerge naturally.
-    <br><br>
-    Moving fluidly between figurative and abstract language, Mandar’s practice embraces contrast:
-    strength and vulnerability, chaos and calm, depth and light. His work does not demand answers—
-    it opens conversations.
-  </p>
+<section id="hero">
+  <h1>Mandar Karnik</h1>
+  <p>Contemporary | Abstract | Emotional Narratives</p>
 </section>
 
-<!-- THEME 1 -->
-<section class="theme" id="women-expression">
-  <h2>Women – Culture, Expression & Identity</h2>
-  <div class="gallery-grid">
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
 
-    <figure>
-      <img src="images/art7.jpeg" alt="Native Strength" class="clickable">
-      <figcaption>
-        <strong>Native Strength</strong><br>
-        A powerful Native American woman emerges through intense purples and sharp, serpent-like eyes.
-        Anger, resilience, and ancestral memory converge into a commanding presence. 24" × 24"
-      </figcaption>
-    </figure>
+  <h2>Woman — Expression & Reimagined Identity</h2>
+  <div class="grid">
+    <img src="images/art7.jpeg" data-title="Serpent Gaze"
+      data-size='24" × 24"' data-desc="A powerful portrait inspired by indigenous strength and primal emotion. Purple dominates the canvas, where piercing eyes echo both vigilance and resilience. The layered textures evoke transformation, echoing the quiet tension between instinct and awareness.">
 
-    <figure>
-      <img src="images/art4.jpeg" alt="Silent History" class="clickable">
-      <figcaption>
-        <strong>Silent History</strong><br>
-        A faceless female form sits within a red and yellow historic space, symbolizing centuries of
-        restricted voices and unspoken thoughts. Stillness becomes resistance. 36" × 24"
-      </figcaption>
-    </figure>
+    <img src="images/art4.jpeg" data-title="Bound Silence"
+      data-size='36" × 24"' data-desc="A contemplative figure defined only by outline, seated within a historical red and yellow landscape. The absence of facial identity becomes a statement — reflecting eras where women existed within boundaries, thinking deeply yet unheard.">
 
-    <figure>
-      <img src="images/art2.jpeg" alt="Confident Half" class="clickable">
-      <figcaption>
-        <strong>Confident Half</strong><br>
-        A modern portrait where half the face bursts with color while the other remains untouched.
-        Confidence, clarity, and self-awareness coexist in striking balance. 24" × 24"
-      </figcaption>
-    </figure>
+    <img src="images/art2.jpeg" data-title="Emerging Light"
+      data-size='12" × 12"' data-desc="A modern female portrait marked by confidence and clarity. One half blooms with vibrant color, while the other remains untouched — symbolizing evolution, balance, and the moment between becoming and being.">
 
-    <figure>
-      <img src="images/art5.jpeg" alt="Tradition Reimagined" class="clickable">
-      <figcaption>
-        <strong>Tradition Reimagined</strong><br>
-        Eyes closed, the subject blends contemporary expression with traditional aesthetics.
-        Color and makeup become symbols of quiet strength and inner identity. 36" × 36"
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/art9.jpeg" alt="Inner Echo" class="clickable">
-      <figcaption>
-        <strong>Inner Echo</strong><br>
-        An abstract face with closed eyes, hovering between humanity and skeletal form.
-        The painting reflects introspection, impermanence, and the silence beneath thought. 12" × 12"
-      </figcaption>
-    </figure>
-
+    <img src="images/art5.jpeg" data-title="Traditional Reimagined"
+      data-size='24" × 36"' data-desc="Eyes closed in introspection, this work merges contemporary femininity with traditional elegance. Rich colors and expressive makeup celebrate inner calm, cultural memory, and emotional self-awareness.">
   </div>
-</section>
 
-<!-- THEME 2 -->
-<section class="theme" id="positivity">
-  <h2>Positivity & Flow of Colors</h2>
-  <div class="gallery-grid">
-
-    <figure>
-      <img src="images/art1.jpeg" alt="Northern Serenity" class="clickable">
-      <figcaption>
-        <strong>Northern Serenity</strong><br>
-        A snowy landscape illuminated by northern lights, capturing calm, wonder, and quiet optimism. 12" × 12"
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/art3.jpeg" alt="Ocean Harmony" class="clickable">
-      <figcaption>
-        <strong>Ocean Harmony</strong><br>
-        Contemporary waves meet the shore, expressing movement, rhythm, and emotional balance. 12" × 12"
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/art10.jpeg" alt="Green Current" class="clickable">
-      <figcaption>
-        <strong>Green Current</strong><br>
-        An abstract ocean of layered greens and flowing pours.
-        Free of representation, the work radiates energy, renewal, and organic motion. 24" × 30"
-      </figcaption>
-    </figure>
-
-    <figure>
-      <img src="images/art11.jpeg" alt="Emerging Light" class="clickable">
-      <figcaption>
-        <strong>Emerging Light</strong><br>
-        Radiant rays of color burst outward from a glowing core, while subtle blues beneath
-        hint at calm beneath optimism. A celebration of hope rising. 24" × 30"
-      </figcaption>
-    </figure>
-
-  </div>
-</section>
-
-<!-- THEME 3 -->
-<section class="theme" id="urban-landscape">
-  <h2>Inner Landscapes & Urban Emotion</h2>
-  <div class="gallery-grid">
-
-    <figure>
-      <img src="images/art8.jpeg" alt="Rain Over the City" class="clickable">
-      <figcaption>
-        <strong>Rain Over the City</strong><br>
-        A rain-soaked cityscape where reflections, motion, and atmosphere blur into emotion.
-        The urban environment becomes introspective and deeply human. 24" × 36"
-      </figcaption>
-    </figure>
-
-  </div>
-</section>
-
-<!-- THEME 4 -->
-<section class="theme" id="dual-expression">
-  <h2>Expressions & Dual Thought</h2>
-  <div class="gallery-grid">
-
-    <figure>
-      <img src="images/art6.jpeg" alt="Dual Mind" class="clickable">
-      <figcaption>
-        <strong>Dual Mind</strong><br>
-        Warm and cool worlds collide diagonally—sun and ocean divided by a fractured heart.
-        A visual metaphor for dual perception and layered thinking. 12" × 12"
-      </figcaption>
-    </figure>
-
-  </div>
-</section>
-
-<footer id="contact">
-  <p>
-    © Mandar Karnik · All artworks protected<br>
-    For inquiries: <strong>your-email@example.com</strong>
-  </p>
-</footer>
-
-<script>
-  const images = document.querySelectorAll('.clickable');
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      const overlay = document.createElement('div');
-      overlay.classList.add('lightbox-overlay');
-      overlay.innerHTML = `<img src="${img.src}"><span class="close">&times;</span>`;
-      document.body.appendChild(overlay);
-      overlay.querySelector('.close').onclick = () => overlay.remove();
-      overlay.onclick = e => { if (e.target === overlay) overlay.remove(); };
-    });
-  });
-</script>
-
-</body>
-</html>
+  <h2>Flow of Color & Positivity</h2>
