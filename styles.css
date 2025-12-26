@@ -5,7 +5,7 @@ body {
   color: #eaeaea;
 }
 
-/* NAV */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -17,7 +17,7 @@ body {
 }
 
 .nav-links a {
-  margin-left: 28px;
+  margin-left: 40px;
   color: #ccc;
   text-decoration: none;
   font-size: 14px;
@@ -46,18 +46,20 @@ h2 {
   margin-bottom: 70px;
 }
 
-/* ART */
+/* ART CARD */
 .art-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   background: #000;
+  cursor: pointer;
 }
 
 .caption {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 8px;
   color: #bbb;
+  text-align: center;
 }
 
 /* MODAL */
@@ -86,9 +88,20 @@ h2 {
 }
 
 .close {
-  position: absolute;
-  top: 70px;
-  right: 40px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
   font-size: 30px;
+  color: #fff;
   cursor: pointer;
+  z-index: 1000;
+}
+
+/* Fix Duality & Inner Landscapes image size */
+.art-card img.small-grid {
+  max-width: 90%; 
+  height: auto;
+  aspect-ratio: auto;
+  display: block;
+  margin: 0 auto;
 }
