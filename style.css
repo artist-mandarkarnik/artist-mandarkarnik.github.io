@@ -1,103 +1,115 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: #121212;
-  color: #eaeaea;
+  font-family: "Helvetica Neue", sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #000);
+  color: #eee;
 }
 
-a {
-  color: #ffcc70;
-  text-decoration: none;
-}
-
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
-  background: #0f0f0f;
-  padding: 15px 40px;
+  z-index: 100;
+  background: rgba(0,0,0,0.85);
   display: flex;
   justify-content: space-between;
-  z-index: 100;
+  padding: 16px 40px;
 }
 
-.hero {
-  background: linear-gradient(180deg, #1a1a1a, #121212);
-  text-align: center;
-  padding: 70px 20px;
+.nav-right a {
+  margin-left: 28px;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.05em;
 }
 
-section {
-  padding: 60px 10%;
+.nav-right a:hover {
+  color: #ffcc70;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 8%;
 }
 
 h2 {
-  margin-bottom: 25px;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  margin-bottom: 30px;
 }
 
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-  margin-bottom: 60px;
+  gap: 26px;
+  margin-bottom: 80px;
 }
 
-.grid img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 10px;
+/* ART CARDS */
+.art-card {
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.grid img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 200, 120, 0.3);
+.art-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
 }
 
-/* force same size for last section */
-.grid.dual img {
-  height: 230px;
+.art-card:hover img {
+  transform: scale(1.04);
 }
 
-/* LIGHTBOX */
-#lightbox {
+/* DUALITY FIX */
+.duality img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #111;
+}
+
+/* CAPTION */
+.caption {
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 8px;
+  color: #bbb;
+}
+
+/* MODAL */
+#modal {
+  display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.9);
-  display: none;
-  z-index: 9999;
+  background: rgba(0,0,0,0.95);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.lightbox-content {
-  max-width: 80%;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  padding-top: 40px;
+#modal img {
+  max-width: 85%;
+  max-height: 70vh;
+  border-radius: 8px;
 }
 
-#lightbox img {
-  max-width: 100%;
-  max-height: 65vh;
-  border-radius: 12px;
-}
-
-#lightbox h3 {
-  margin-top: 15px;
-}
-
-#lightbox p {
+#modal-caption {
   max-width: 700px;
-  margin: 10px auto;
+  text-align: center;
+  font-size: 18px;
   line-height: 1.6;
+  margin-top: 24px;
+  color: #eee;
 }
 
-#close {
+.close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 40px;
+  top: 80px;
+  right: 40px;
+  font-size: 28px;
   cursor: pointer;
-  color: #ffcc70;
 }
