@@ -1,87 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Mandar Karnik | Art Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body class="dark">
 
-<header class="navbar">
-  <div class="logo">Mandar Karnik</div>
-  <nav>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">Mandar Karnik</div>
+    <div class="nav-right">
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#cv">Artist CV</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
-</header>
 
-<section class="hero">
-  <h1>Mandar Karnik</h1>
-  <p>Contemporary & Abstract Paintings</p>
-</section>
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <h2>Woman · Identity · Culture</h2>
+    <div class="grid">
 
-<section id="gallery">
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art7.jpeg" alt="">
+        <div class="caption">
+          <strong>Feral Grace</strong><br>
+          A Native American woman radiating restrained fury and ancestral power. Purple dominates as a symbol of intuition and resistance, while serpent-like undertones reflect survival instincts sharpened by history.<br>
+          <em>24 × 24</em>
+        </div>
+      </div>
 
-  <h2>Woman — Expression & Reimagined Identity</h2>
-  <div class="grid">
-    <img src="images/art7.jpeg" data-title="Serpent Gaze" data-desc="A powerful portrait exploring primal emotion and transformation.">
-    <img src="images/art4.jpeg" data-title="Bound Silence" data-desc="A contemplative figure reflecting historical restraint and inner awareness.">
-    <img src="images/art2.jpeg" data-title="Emerging Light" data-desc="A modern portrait balancing restraint and self-discovery.">
-    <img src="images/art5.jpeg" data-title="Traditional Reimagined" data-desc="A fusion of contemporary femininity and traditional elegance.">
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art4.jpeg" alt="">
+        <div class="caption">
+          <strong>Bound Silence</strong><br>
+          A faceless feminine form seated in solitude. Red and yellow echo inherited constraints—where womanhood, history, and silence intersect in quiet defiance.<br>
+          <em>36 × 24</em>
+        </div>
+      </div>
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art2.jpeg" alt="">
+        <div class="caption">
+          <strong>Unfinished Becoming</strong><br>
+          A confident gaze emerges from color, while half the face remains untouched—symbolizing potential, choice, and identity still unfolding in modern womanhood.<br>
+          <em>24 × 24</em>
+        </div>
+      </div>
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art5.jpeg" alt="">
+        <div class="caption">
+          <strong>Traditional Reimagined</strong><br>
+          Eyes closed in introspection, adorned in vivid hues—where tradition meets self-authored modernity, unbound by expectation.<br>
+          <em>24 × 36</em>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Color · Flow · Positivity</h2>
+    <div class="grid">
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art1.jpeg" alt="">
+        <div class="caption">
+          <strong>Northern Breath</strong><br>
+          A frozen landscape illuminated by celestial motion—hope moving quietly through stillness.<br>
+          <em>12 × 12</em>
+        </div>
+      </div>
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art3.jpeg" alt="">
+        <div class="caption">
+          <strong>Tidal Calm</strong><br>
+          Ocean and shoreline dissolve into abstraction, evoking emotional balance through movement and restraint.<br>
+          <em>12 × 12</em>
+        </div>
+      </div>
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art8.jpeg" alt="">
+        <div class="caption">
+          <strong>City in Rain</strong><br>
+          Urban solitude softened by rainfall—motion, reflection, and introspection coexist in muted harmony.<br>
+          <em>24 × 36</em>
+        </div>
+      </div>
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art10.jpeg" alt="">
+        <div class="caption">
+          <strong>Verdant Drift</strong><br>
+          An abstract pour of green energy—organic, unforced, and deeply restorative.<br>
+          <em>24 × 30</em>
+        </div>
+      </div>
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art11.jpeg" alt="">
+        <div class="caption">
+          <strong>Emerging Light</strong><br>
+          Radiant color bursts outward, yet cool blues linger beneath—optimism shaped by experience, not denial.<br>
+          <em>12 × 12</em>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Duality & Inner Landscapes</h2>
+    <div class="grid duality">
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art6.jpeg" alt="">
+        <div class="caption">
+          <strong>Split Horizon</strong><br>
+          Warmth and coolness collide across a divided heart—an internal dialogue where contradiction becomes clarity.<br>
+          <em>12 × 12</em>
+        </div>
+      </div>
+
+      <div class="art-card" onclick="openModal(this)">
+        <img src="art9.jpeg" alt="">
+        <div class="caption">
+          <strong>Quiet Collapse</strong><br>
+          A meditative face dissolves toward skull-like abstraction—fragility, impermanence, and inner silence coexisting.<br>
+          <em>12 × 12</em>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About the Artist</h2>
+    <p>
+      Mandar Karnik’s work exists at the intersection of emotion, identity, and perception.
+      His paintings explore inner landscapes—where color becomes language and form dissolves into feeling.
+      Each piece invites prolonged engagement rather than immediate interpretation.
+    </p>
+  </section>
+
+  <!-- CV -->
+  <section id="cv" class="section">
+    <h2>Artist CV</h2>
+    <p>
+      Emerging contemporary artist working primarily in acrylic and mixed media.<br>
+      Themes include identity, duality, emotion, and abstraction.<br>
+      Open to juried exhibitions, gallery representation, and collaborative projects.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mandarkarnik@ymail.com">mandarkarnik@ymail.com</a></p>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" onclick="closeModal(event)">
+    <span class="close-btn" onclick="closeModal()">✕</span>
+    <img id="modal-img">
+    <div id="modal-caption"></div>
   </div>
 
-  <h2>Flow of Color & Positivity</h2>
-  <div class="grid">
-    <img src="images/art1.jpeg" data-title="Northern Stillness" data-desc="Meditative winter silence illuminated by light.">
-    <img src="images/art3.jpeg" data-title="Tidal Calm" data-desc="A flowing abstraction of oceanic rhythm.">
-    <img src="images/art8.jpeg" data-title="City in Rain" data-desc="An urban landscape dissolved into emotion and atmosphere.">
-    <img src="images/art10.jpeg" data-title="Verdant Flow" data-desc="Green energy poured into organic harmony.">
-    <img src="images/art11.jpeg" data-title="Radiant Core" data-desc="Energy radiating outward with balance and depth.">
-  </div>
+<script>
+function openModal(card) {
+  const img = card.querySelector("img");
+  const caption = card.querySelector(".caption").innerHTML;
+  document.getElementById("modal-img").src = img.src;
+  document.getElementById("modal-caption").innerHTML = caption;
+  document.getElementById("modal").style.display = "flex";
+}
 
-  <h2>Duality & Inner Landscapes</h2>
-  <div class="grid dual">
-    <img src="images/art6.jpeg" data-title="Divided Harmony" data-desc="Warm and cool states coexisting within one form.">
-    <img src="images/art9.jpeg" data-title="Quiet Echo" data-desc="An introspective face hovering between form and silence.">
-  </div>
+function closeModal(e) {
+  if (!e || e.target.id === "modal" || e.target.className === "close-btn") {
+    document.getElementById("modal").style.display = "none";
+  }
+}
 
-</section>
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeModal();
+});
+</script>
 
-<section id="about">
-  <h2>About</h2>
-  <p>
-    Mandar Karnik’s work explores emotion through intuitive color, abstraction, and layered
-    visual language. Each piece evolves organically, inviting reflection rather than narrative.
-  </p>
-</section>
-
-<section id="cv">
-  <h2>Artist CV</h2>
-  <ul>
-    <li><strong>Medium:</strong> Acrylic on Canvas</li>
-    <li><strong>Style:</strong> Contemporary, Abstract</li>
-    <li><strong>Themes:</strong> Emotion, Identity, Duality</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: mandarkarnik@ymail.com</p>
-</section>
-
-<!-- LIGHTBOX -->
-<div id="lightbox">
-  <div class="lightbox-content">
-    <span id="close">×</span>
-    <img id="lightbox-img">
-    <h3 id="lightbox-title"></h3>
-    <p id="lightbox-desc"></p>
-  </div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
