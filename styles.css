@@ -5,7 +5,6 @@ body {
   color: #eaeaea;
 }
 
-/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -23,22 +22,12 @@ body {
   font-size: 14px;
 }
 
-.nav-links a:hover {
-  color: #fff;
-}
+.nav-links a:hover { color: #fff; }
 
-/* SECTIONS */
-.section {
-  padding: 70px 8%;
-}
+.section { padding: 70px 8%; }
 
-h2 {
-  font-weight: normal;
-  letter-spacing: 0.12em;
-  margin-bottom: 30px;
-}
+h2 { font-weight: normal; letter-spacing: 0.12em; margin-bottom: 30px; }
 
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -46,25 +35,18 @@ h2 {
   margin-bottom: 70px;
 }
 
-/* ART CARD IMAGES */
 .art-card img {
   width: 100%;
-  max-height: 300px;       /* limit height for tall images */
-  object-fit: cover;
+  height: 300px;           /* fixed height for all images */
+  object-fit: cover;        /* fills height, scales width */
   background: #000;
   cursor: pointer;
   display: block;
   margin: 0 auto;
 }
 
-.caption {
-  font-size: 14px;
-  margin-top: 8px;
-  color: #bbb;
-  text-align: center;
-}
+.caption { font-size: 14px; margin-top: 8px; color: #bbb; text-align: center; }
 
-/* MODAL */
 #modal {
   display: none;
   position: fixed;
@@ -76,18 +58,9 @@ h2 {
   align-items: center;
 }
 
-#modal img {
-  max-width: 80%;
-  max-height: 70vh;
-}
+#modal img { max-width: 80%; max-height: 70vh; }
 
-#modal-text {
-  margin-top: 20px;
-  max-width: 600px;
-  text-align: center;
-  font-size: 17px;
-  line-height: 1.5;
-}
+#modal-text { margin-top: 20px; max-width: 600px; text-align: center; font-size: 17px; line-height: 1.5; }
 
 .close {
   position: fixed;
@@ -99,11 +72,12 @@ h2 {
   z-index: 1000;
 }
 
-/* Fix Duality & Inner Landscapes image size */
+/* Fix Duality images */
 .art-card img.small-grid {
-  max-width: 220px;        /* consistent with grid */
-  max-height: 300px;       /* same height as other images */
-  aspect-ratio: auto;
+  height: 300px;            /* same as all other images */
+  object-fit: contain;       /* keep aspect ratio without stretching */
+  width: auto;
+  max-width: 100%;
   display: block;
   margin: 0 auto;
 }
