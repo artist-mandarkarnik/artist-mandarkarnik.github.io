@@ -46,13 +46,15 @@ h2 {
   margin-bottom: 70px;
 }
 
-/* ART CARD */
+/* ART CARD IMAGES */
 .art-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  max-height: 300px;       /* limit height for tall images */
   object-fit: cover;
   background: #000;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .caption {
@@ -99,8 +101,8 @@ h2 {
 
 /* Fix Duality & Inner Landscapes image size */
 .art-card img.small-grid {
-  max-width: 90%; 
-  height: auto;
+  max-width: 220px;        /* consistent with grid */
+  max-height: 300px;       /* same height as other images */
   aspect-ratio: auto;
   display: block;
   margin: 0 auto;
